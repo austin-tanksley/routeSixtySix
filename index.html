@@ -13,28 +13,12 @@
     <a-scene>
       <!-- <a-sky src = "./assets/reunion.jpg" rotation = "0 90 0"></a-sky> -->
         <a-assets>
-          <video id="videoBunny" preload="auto"
-            src="assets/Route66_ 11andQuaker_v03.mp4"
-            width="160" height="90" autoplay loop="true"
-            crossOrigin="anonymous" muted></video>
+          <video id="video" preload="auto"
+              src="assets/Route66_ 11andQuaker_v03.mp4" autoplay loop="true"
+              muted></video>
         </a-assets>
-        <a-videosphere
-          rotation="0 90 0"
-          src="#videoBunny"
-          visible="false"
-          play-on-click>
-        </a-videosphere>
-      <a-camera>
-        <a-entity
-          position="0 0 -1.5"
-          text="align: center;
-                width: 6;
-                wrapCount: 100;
-                color: black;
-                value: Click or tap to start portal"
-          hide-on-play="#videoBunny">
-        </a-entity>
-    </a-camera>
+        <a-videosphere src="#video" rotation = "0 90 0"></a-videosphere>
     </a-scene>
+    <script>document.querySelector("#video").play();</script>
 </body>
 </html>
