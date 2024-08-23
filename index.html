@@ -8,6 +8,7 @@
   <script src="js/play-on-click.js"></script>
   <script src="js/hide-on-play.js"></script>
   <link rel="icon" href="https://fav.farm/🔥">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
     <a-scene loading-screen="dotsColor: red; backgroundColor: black">
@@ -15,7 +16,7 @@
         <a-assets>
           <video id="video" preload="auto"
               src="assets/Route66_ 11andQuaker_v07.mp4" autoplay loop="true"
-              muted playsinline
+              muted playsinline webkit-playsinline
               crossOrigin="anonymous"></video>
         </a-assets>
         <a-videosphere src="#video" rotation = "0 90 0" 
