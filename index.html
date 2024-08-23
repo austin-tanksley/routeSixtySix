@@ -17,7 +17,21 @@
               src="assets/Route66_ 11andQuaker_v03.mp4" autoplay loop="true"
               muted playsinline></video>
         </a-assets>
-        <a-videosphere src="#video" rotation = "0 90 0" play-on-click></a-videosphere>
+        <a-videosphere src="#video" rotation = "0 90 0" 
+        visible="false"
+        play-on-click
+        ></a-videosphere>
+        <a-camera>
+        <a-entity
+          position="0 0 -1.5"
+          text="align: center;
+                width: 6;
+                wrapCount: 100;
+                color: black;
+                value: Click or tap to start portal"
+          hide-on-play="#video">
+        </a-entity>
+      </a-camera>
     </a-scene>
     <!-- <script>document.querySelector("#video").play();</script> -->
 </body>
